@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="~/Forms/Default.aspx" title="Home"  description="Home">
+    <siteMapNode url="~/Forms/Home.aspx" title="Přihlášení"  description="Přihlášení"/>
+    <siteMapNode url="~/Forms/NRez.aspx" title="Nová rezervace"  description="Nová rezervace"/>
+     <siteMapNode url="~/Forms/Rezervace.aspx" title="Mé rezervace"  description="Mé rezervace"/>
+     <siteMapNode url="~/Forms/Zbrane.aspx" title="Dostupné zbraně"  description="Dostupné zbraně"/>
+      <siteMapNode url="~/Forms/Strelby.aspx" title="Historie střeleb"  description="Historie střeleb" />
+      <siteMapNode url="~/Forms/MujProfil.aspx" title="Můj Profil"  description="Můj profil" />
+  </siteMapNode>
+</siteMap>

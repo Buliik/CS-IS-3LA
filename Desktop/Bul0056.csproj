@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9009FEF5-55C7-485E-AF68-1C2DCBFD0378}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bul0056</RootNamespace>
+    <AssemblyName>Bul0056</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\DZamestnanec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DZamestnanec.Designer.cs">
+      <DependentUpon>DZamestnanec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LZamestnanec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LZamestnanec.Designer.cs">
+      <DependentUpon>LZamestnanec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LStrelba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LStrelba.Designer.cs">
+      <DependentUpon>LStrelba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DStrelba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DStrelba.Designer.cs">
+      <DependentUpon>DStrelba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DZakaznik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DZakaznik.Designer.cs">
+      <DependentUpon>DZakaznik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DZbran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DZbran.Designer.cs">
+      <DependentUpon>DZbran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LZakaznik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LZakaznik.Designer.cs">
+      <DependentUpon>LZakaznik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LZbran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LZbran.Designer.cs">
+      <DependentUpon>LZbran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templates\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Templates\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\DStrelba.resx">
+      <DependentUpon>DStrelba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DZakaznik.resx">
+      <DependentUpon>DZakaznik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DZamestnanec.resx">
+      <DependentUpon>DZamestnanec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DZbran.resx">
+      <DependentUpon>DZbran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LStrelba.resx">
+      <DependentUpon>LStrelba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LZakaznik.resx">
+      <DependentUpon>LZakaznik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LZamestnanec.resx">
+      <DependentUpon>LZamestnanec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LZbran.resx">
+      <DependentUpon>LZbran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Templates\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\Bul0056.Aggregates.Prostor.datasource" />
+    <None Include="Properties\DataSources\Bul0056.Aggregates.Rezervace.datasource" />
+    <None Include="Properties\DataSources\Bul0056.Aggregates.Strelba.datasource" />
+    <None Include="Properties\DataSources\Bul0056.Aggregates.StrelbaDTO.datasource" />
+    <None Include="Properties\DataSources\Bul0056.Aggregates.Zakaznik.datasource" />
+    <None Include="Properties\DataSources\Bul0056.Aggregates.Zamestnanec.datasource" />
+    <None Include="Properties\DataSources\Bul0056.Aggregates.Zbran.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\Application\Application.csproj">
+      <Project>{f6f48adc-0d94-4433-bdb5-91b43c5678b9}</Project>
+      <Name>Application</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
